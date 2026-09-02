@@ -1,0 +1,11 @@
+# Cloudflare security headers (honored by Cloudflare Pages/static hosting).
+# The same headers are also applied at runtime by the server middleware in
+# src/start.ts, so responses are covered on Cloudflare Workers too.
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  Cross-Origin-Opener-Policy: same-origin
