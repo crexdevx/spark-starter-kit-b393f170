@@ -1,10 +1,10 @@
 import { useEffect, useRef } from "react";
-import cardioImg from "../assets/program-cardio.webp.asset.json";
-import fatlossImg from "../assets/program-fatloss.webp.asset.json";
-import muscleImg from "../assets/program-muscle.webp.asset.json";
-import personalImg from "../assets/program-personal.webp.asset.json";
-import strengthImg from "../assets/program-strength.webp.asset.json";
-import weightImg from "../assets/program-weight.webp.asset.json";
+import cardioImg from "../assets/program-cardio.jpg";
+import fatlossImg from "../assets/program-fatloss.jpg";
+import muscleImg from "../assets/program-muscle.jpg";
+import personalImg from "../assets/program-personal.jpg";
+import strengthImg from "../assets/program-strength.jpg";
+import weightImg from "../assets/program-weight.jpg";
 
 type Program = {
   title: string;

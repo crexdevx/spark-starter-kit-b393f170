@@ -1,5 +1,4 @@
 import posterUrl from "../assets/sky-lifting-hero-poster.jpg";
-import heroVideo from "../assets/sky-lifting-hero.webm.asset.json";
 
 /**
  * Homepage hero for Sky Lifting Club.
@@ -15,17 +14,14 @@ export function Hero() {
       aria-labelledby="hero-heading"
       className="relative flex h-[100svh] w-full items-center justify-end overflow-hidden bg-background"
     >
-      {/* Background media — autoplaying muted looped video over a poster fallback. */}
+      {/* Background media — a still hero image keeps LCP cheap and avoids layout shift. */}
       <div className="absolute inset-0" aria-hidden="true">
-        <video
+        <img
           className="absolute inset-0 h-full w-full object-cover"
-          src={heroVideo.url}
-          poster={posterUrl}
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
+          src={posterUrl}
+          alt=""
+          loading="eager"
+          decoding="async"
         />
         {/* Subtle overlay for text readability */}
         <div className="absolute inset-0 bg-black/45 bg-gradient-to-b from-black/60 via-black/30 to-black/70" />
