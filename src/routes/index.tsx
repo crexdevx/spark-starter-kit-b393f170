@@ -38,9 +38,9 @@ function Index() {
       <Hero />
       <About />
       <Programs />
-      <Gallery />
       <WhyChooseUs />
       <Membership />
+      <Gallery />
     </main>
   );
 }
