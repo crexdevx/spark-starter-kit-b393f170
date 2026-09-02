@@ -17,37 +17,37 @@ const PROGRAMS: Program[] = [
     title: "Strength Training",
     description:
       "Build raw power with progressive barbell and compound lift programming.",
-    image: strengthImg.url,
+    image: strengthImg,
   },
   {
     title: "Weight Training",
     description:
       "Master free weights and machines with structured, form-first coaching.",
-    image: weightImg.url,
+    image: weightImg,
   },
   {
     title: "Cardio & Conditioning",
     description:
       "Boost stamina and endurance with heart-pumping conditioning circuits.",
-    image: cardioImg.url,
+    image: cardioImg,
   },
   {
     title: "Personal Training",
     description:
       "One-on-one coaching tailored to your goals, pace, and experience.",
-    image: personalImg.url,
+    image: personalImg,
   },
   {
     title: "Muscle Building",
     description:
       "Hypertrophy-focused splits designed to add lean, lasting muscle mass.",
-    image: muscleImg.url,
+    image: muscleImg,
   },
   {
     title: "Fat Loss",
     description:
       "High-energy training and guidance to burn fat and reveal definition.",
-    image: fatlossImg.url,
+    image: fatlossImg,
   },
 ];
 
