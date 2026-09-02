@@ -98,7 +98,7 @@ export function Gallery() {
         {/* Grouped collage: a scattered pile of polaroid-style tiles */}
         <div className="mt-12 flex flex-wrap justify-center gap-3 sm:gap-5">
           {SHOTS.map((shot, index) => {
-            const place = PLACEMENT[index % PLACEMENT.length];
+            const place = PLACEMENT[index % PLACEMENT.length] ?? PLACEMENT[0]!;
             return (
               <button
                 key={shot.url}
